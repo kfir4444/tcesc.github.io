@@ -1,3 +1,28 @@
-theme: jekyll-theme-slate
+# Site settings
 title: TCESE 2023
 description: This is only a beginning 
+baseurl: ""
+
+# Build settings
+theme: jekyll-theme-slate
+permalink: /:year/:month/:day/:title/
+paginate: 10
+paginate_path: /blog/page:num/
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Navigation
+nav_links:
+  - title: Home
+    url: /
+  - title: Call For Participants
+    url: /call-for-abstracts/
+  - title: Schedule
+    url: /program-schedule/
